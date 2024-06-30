@@ -1,4 +1,7 @@
 {
   "eslint.enable": false,
-  "javascript.format.enable": false
+  "javascript.format.enable": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

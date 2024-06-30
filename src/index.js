@@ -4,7 +4,7 @@ import { sleep, Menu } from "utils";
 // import { combine } from '@qt/utils/lib/path/index.js';
 // import { Service } from '@qt/base/lib/application/index.js'
 // import { cron } from '@qt/utils';
-import * as spa from "utils/single-spa";
+// import * as spa from "utils/single-spa";
 import { noop } from 'lodash-es';
 
 sleep(1000).then(() => {
