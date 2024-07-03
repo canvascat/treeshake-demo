@@ -50,15 +50,21 @@ const optimization = {
  * @returns {import('webpack').Configuration}
  */
 export default (env, argv) => {
-  const mode = argv.mode;
+  console.debug("run at ", argv.mode);
   return {
     entry: "./src/index.js",
     // mode: "development",
-    mode: "production",
-    // devtool: "cheap-module-source-map",
+    module: {
+      rules: [
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
+      ],
+    },
     optimization: {
       //   // usedExports: true,
-      //   sideEffects: true,
+      sideEffects: true,
       //   // innerGraph: true,
       minimize: false,
       // https://github.com/webpack/webpack/blob/dd44b206a9c50f4b4cb4d134e1a0bd0387b159a3/lib/config/defaults.js#L1446
