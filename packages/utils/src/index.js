@@ -7,6 +7,6 @@ export * from "./print.js";
 
 // export * from './throttle.js'
 
-export * from "./debounce.js";
+// export * from "./debounce.js";
 
 export { default as Menu } from "./menu.js";

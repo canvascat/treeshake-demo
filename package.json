@@ -6,7 +6,8 @@
   "module": "src/index.js",
   "scripts": {
     "build": "pnpm run \"/^build:.*/\"",
-    "build:webpack": "webpack --config webpack.config.js --mode production",
+    "build:webpack": "webpack --config webpack.config.js",
+    "run:terser": "node ./run.js",
     "build:rollup": "rollup --config"
   },
   "devDependencies": {

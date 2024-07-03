@@ -9,8 +9,7 @@
     "./src/**/*"
   ],
   "exports": {
-    ".": "./src/index.js",
-    "./single-spa": "./src/single-spa.js"
+    ".": "./src/index.js"
   },
   "keywords": [],
   "author": "",

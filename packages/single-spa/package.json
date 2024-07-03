@@ -1,0 +1,14 @@
+{
+  "name": "single-spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "single-spa.dev.js",
+  "type": "module",
+  "exports": {
+    ".": "./single-spa.dev.js"
+  },
+  "sideEffects": false,
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

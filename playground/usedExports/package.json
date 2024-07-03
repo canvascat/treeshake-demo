@@ -1,0 +1,22 @@
+{
+  "name": "used-exports",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "utils": "link:packages\\utils",
+    "single-spa": "link:packages\\single-spa"
+  },
+  "devDependencies": {
+    "terser": "^5.31.1",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
