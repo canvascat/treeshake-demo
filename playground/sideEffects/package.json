@@ -2,7 +2,8 @@
   "name": "side-effects",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "module": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "utils": "link:packages\\utils",
-    "single-spa": "link:packages\\single-spa"
+    "single-spa": "workspace:^",
+    "utils": "workspace:^"
   },
   "devDependencies": {
+    "config": "workspace:^",
     "terser": "^5.31.1",
     "terser-webpack-plugin": "^5.3.10",
     "webpack": "^5.92.1",

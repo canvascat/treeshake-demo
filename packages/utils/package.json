@@ -16,5 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.3.10"
   }
 }

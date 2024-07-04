@@ -10,5 +10,11 @@
   "sideEffects": false,
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.3.10"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
 }
