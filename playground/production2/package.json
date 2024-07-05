@@ -1,5 +1,5 @@
 {
-  "name": "side-effects",
+  "name": "production2",
   "version": "1.0.0",
   "description": "",
   "module": "src/index.js",
@@ -8,18 +8,13 @@
     "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
-  "sideEffects": true,
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "single-spa": "workspace:^",
-    "utils": "workspace:^"
-  },
   "devDependencies": {
-    "config": "workspace:^",
-    "terser": "^5.31.1",
-    "terser-webpack-plugin": "^5.3.10",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

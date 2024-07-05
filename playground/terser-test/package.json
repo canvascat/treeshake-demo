@@ -1,0 +1,16 @@
+{
+  "name": "terser-test",
+  "version": "1.0.0",
+  "description": "",
+  "module": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node ./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "terser": "^5.31.1"
+  }
+}

@@ -2,24 +2,26 @@ import * as terser from "terser";
 import * as path from "node:path";
 import * as fsp from "node:fs/promises";
 import { cwd } from "node:process";
-import { terserOptions } from "./terser.config.js";
+// import { terserOptions } from "./terser.config.js";
 
 async function setup() {
   const content = await fsp.readFile(
-    path.join(cwd(), "./dist/webpack.js"),
+    path.join(cwd(), "playground/usedExports/dist/output.js"),
     "utf-8"
   );
   const output = await terser.minify(
     {
       ["webpack.js"]: content,
     },
-    terserOptions
+    {
+      compress: {
+        passes: 2,
+      },
+      mangle: false, // 不进行变量重命名
+    }
   );
 
-  await fsp.writeFile(
-    path.join(cwd(), "./dist/webpack-terser.js"),
-    output.code
-  );
+  await fsp.writeFile(path.join(cwd(), "./output.min.js"), output.code);
 
   // console.debug(output);
 }

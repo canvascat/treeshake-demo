@@ -88,14 +88,36 @@ importers:
         specifier: ^5.3.10
         version: 5.3.10(webpack@5.92.1(webpack-cli@5.1.4(webpack@5.92.1)))
 
+  playground/production:
+    devDependencies:
+      webpack:
+        specifier: ^5.92.1
+        version: 5.92.1(webpack-cli@5.1.4)
+      webpack-cli:
+        specifier: ^5.1.4
+        version: 5.1.4(webpack@5.92.1)
+
+  playground/production2:
+    dependencies:
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
+    devDependencies:
+      webpack:
+        specifier: ^5.92.1
+        version: 5.92.1(webpack-cli@5.1.4)
+      webpack-cli:
+        specifier: ^5.1.4
+        version: 5.1.4(webpack@5.92.1)
+
   playground/sideEffects:
     dependencies:
       single-spa:
-        specifier: link:packages\single-spa
-        version: link:packages/single-spa
+        specifier: workspace:^
+        version: link:../../packages/single-spa
       utils:
-        specifier: link:packages\utils
-        version: link:packages/utils
+        specifier: workspace:^
+        version: link:../../packages/utils
     devDependencies:
       config:
         specifier: workspace:^
@@ -113,14 +135,20 @@ importers:
         specifier: ^5.1.4
         version: 5.1.4(webpack@5.92.1)
 
+  playground/terser-test:
+    devDependencies:
+      terser:
+        specifier: ^5.31.1
+        version: 5.31.1
+
   playground/usedExports:
     dependencies:
       single-spa:
-        specifier: link:packages\single-spa
-        version: link:packages/single-spa
+        specifier: workspace:^
+        version: link:../../packages/single-spa
       utils:
-        specifier: link:packages\utils
-        version: link:packages/utils
+        specifier: workspace:^
+        version: link:../../packages/utils
     devDependencies:
       config:
         specifier: workspace:^
@@ -672,6 +700,9 @@ packages:
 
   lodash-es@4.17.21:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+
+  lodash@4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
   lru-cache@10.2.2:
     resolution: {integrity: sha512-9hp3Vp2/hFQUiIwKo8XCeFVnrg8Pk3TYNPIR7tJADKi5YfcF7vEaK7avFHTlSy3kOKYaJQaalfEo6YuXdceBOQ==}
@@ -1451,6 +1482,8 @@ snapshots:
       p-locate: 4.1.0
 
   lodash-es@4.17.21: {}
+
+  lodash@4.17.21: {}
 
   lru-cache@10.2.2: {}
 

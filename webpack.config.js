@@ -29,6 +29,7 @@ export default (env, argv) => {
   return {
     entry: "./src/index.js",
     mode: "development",
+
     devtool: false,
     module: {
       rules: [

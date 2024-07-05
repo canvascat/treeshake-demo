@@ -1,6 +1,5 @@
 import TerserPlugin from "terser-webpack-plugin";
 import { terserOptions } from "config/terser";
-import ModuleConcatenationPlugin from "webpack/lib/optimize/ModuleConcatenationPlugin.js";
 
 /** @type {import('webpack').Configuration['optimization']} */
 const optimization = {
@@ -22,10 +21,10 @@ export default () => {
     output: {
       filename: `output.js`,
     },
-    // plugins: [new ModuleConcatenationPlugin()],
     optimization: {
-      concatenateModules: true,
-      // usedExports: true,
+      usedExports: true,
+      sideEffects: true,
+      // sideEffects
       // minimize: true,
       // minimizer: [
       //   new TerserPlugin({
